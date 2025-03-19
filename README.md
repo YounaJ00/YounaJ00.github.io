@@ -1,43 +1,48 @@
-# Chirpy Starter
+## How To Start
 
-[![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy)][gem]&nbsp;
-[![GitHub license](https://img.shields.io/github/license/cotes2020/chirpy-starter.svg?color=blue)][mit]
-
-When installing the [**Chirpy**][chirpy] theme through [RubyGems.org][gem], Jekyll can only read files in the folders
-`_data`, `_layouts`, `_includes`, `_sass` and `assets`, as well as a small part of options of the `_config.yml` file
-from the theme's gem. If you have ever installed this theme gem, you can use the command
-`bundle info --path jekyll-theme-chirpy` to locate these files.
-
-The Jekyll team claims that this is to leave the ball in the user’s court, but this also results in users not being
-able to enjoy the out-of-the-box experience when using feature-rich themes.
-
-To fully use all the features of **Chirpy**, you need to copy the other critical files from the theme's gem to your
-Jekyll site. The following is a list of targets:
-
-```shell
-.
-├── _config.yml
-├── _plugins
-├── _tabs
-└── index.html
+```console
+bundle exec jekyll s
 ```
 
-To save you time, and also in case you lose some files while copying, we extract those files/configurations of the
-latest version of the **Chirpy** theme and the [CD][CD] workflow to here, so that you can start writing in minutes.
+## H2 Tag
 
-## Usage
+### H3 Tag
 
-Check out the [theme's docs](https://github.com/cotes2020/jekyll-theme-chirpy/wiki).
+#### H4 Tag
 
-## Contributing
+1. 안녕
+2. 안녕
 
-This repository is automatically updated with new releases from the theme repository. If you encounter any issues or want to contribute to its improvement, please visit the [theme repository][chirpy] to provide feedback.
+- 안녕
+    - 안녕
 
-## License
+```sql
+select employee_id, concat(first_name, ' ',last_name) as name, salary, hire_date, job_id, manager_id
+from employees
+where employee_id;
+```
 
-This work is published under [MIT][mit] License.
+```js
+const youna = {age: 29}
+```
 
-[gem]: https://rubygems.org/gems/jekyll-theme-chirpy
-[chirpy]: https://github.com/cotes2020/jekyll-theme-chirpy/
-[CD]: https://en.wikipedia.org/wiki/Continuous_deployment
-[mit]: https://github.com/cotes2020/chirpy-starter/blob/master/LICENSE
+```ts
+console.log("안녕")
+```
+
+```yaml
+services:
+  mysqlhr:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: 1234
+    ports:
+      # 외부에 노출되는 포트 / 내부 포트
+      - "13310:3306"
+    networks:
+      - youna
+
+networks:
+  youna:
+    driver: bridge
+```
